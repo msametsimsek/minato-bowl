@@ -487,30 +487,7 @@ section {
     inset: 0;
     padding: 70px 0 20px 0;
     margin: 0;
-    background: rgba(255, 255, 255, 0.97);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-  }
-
-  .mobile-nav-active .navbar {
-    right: 0;
-  }
-
-  .mobile-nav-active .navbar:before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(47, 52, 45, 0.18);
-    z-index: 9996;
-  }
-}
-
-  .navbar ul {
-    position: absolute;
-    inset: 0;
-    padding: 50px 0 10px 0;
-    margin: 0;
+    list-style: none;
     background: rgba(255, 255, 255, 0.97);
     overflow-y: auto;
     transition: 0.3s;
@@ -603,7 +580,7 @@ section {
     background: rgba(47, 52, 45, 0.18);
     z-index: 9996;
   }
-
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1896,3 +1873,82 @@ section {
     line-height: 1;
   }
 }
+
+@media (max-width: 767px) {
+  #header,
+  .header {
+    height: 76px;
+    min-height: 76px;
+    padding: 0 14px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.05);
+  }
+
+  .header .logo {
+    gap: 10px;
+    max-width: 150px;
+    text-decoration: none;
+  }
+
+  .header .logo img {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+
+  .header .logo h1 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    color: var(--color-secondary);
+    white-space: nowrap;
+  }
+
+  .header .btn-book-a-table {
+    height: 40px;
+    padding: 0 14px;
+    font-size: 13px;
+    border-radius: 999px;
+    margin: 0 10px 0 auto;
+  }
+
+  .mobile-nav-show {
+    font-size: 28px;
+    margin: 0;
+  }
+}
+#header .logo .brand-text {
+  display: flex;
+  align-items: center;
+}
+
+#header .logo .brand-text .brand-line {
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 800 !important;
+  letter-spacing: -0.3px;
+  color: var(--color-secondary);
+  display: inline-block;
+}
+
+#header .logo .brand-text {
+  display: flex;
+  align-items: center;
+}
+
+#header .logo .brand-text .brand-line {
+  font-family: var(--font-secondary);
+  font-size: 17px;
+  line-height: 1;
+  font-weight: 800 !important;
+  letter-spacing: -0.3px;
+  color: var(--color-secondary);
+  display: inline-block;
+  text-shadow: 0 0 0.3px currentColor;
+}
+
