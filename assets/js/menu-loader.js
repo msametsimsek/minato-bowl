@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
             class="nav-link ${isActive}"
             data-bs-toggle="tab"
             data-bs-target="#${tabId}"
+            href="javascript:void(0)"
           >
             <h4>${group.category}</h4>
           </a>
@@ -194,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         src="${item.image}"
                         class="menu-img img-fluid"
                         alt="${item.name}"
+                        loading="lazy"
                       />
 
                       <h4>${item.name}</h4>
